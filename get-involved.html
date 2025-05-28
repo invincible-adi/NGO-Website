@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - MXP Public Foundation</title>
+    <meta name="description" content="Join our mission and help make a difference in communities worldwide">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="index.html">MXP Public Foundation</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium" href="get-involved.html">Get Involved</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="news-events.html">News & Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="resources-media.html">Resources / Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="legal-compliance.html">Legal & Compliance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success text-white ms-2" href="donate.html">Donate Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-5"
+        style="background-image: url('https://i.pinimg.com/originals/22/8e/84/228e843eb2f374e08785c3c80991d258.jpg');">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Get Involved</h1>
+            <p class="lead">Join our mission and help make a difference in communities worldwide. Every contribution,
+                big or small, creates lasting impact.</p>
+        </div>
+    </section>
+
+    <!-- Ways to Get Involved -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold mb-3">Ways to Make a Difference</h2>
+                <p class="lead">Choose how you want to contribute to positive change in communities worldwide.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <i class="bi bi-hand-thumbs-up-fill fs-1 text-primary mb-3"></i>
+                            <h4 class="fw-bold mb-3">Volunteer</h4>
+                            <p class="text-muted mb-4">Join our team of dedicated volunteers and directly impact
+                                communities through hands-on service.</p>
+                            <button class="btn btn-primary" onclick="showVolunteerForm()">Apply to Volunteer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <i class="bi bi-currency-dollar fs-1 text-success mb-3"></i>
+                            <h4 class="fw-bold mb-3">Donate</h4>
+                            <p class="text-muted mb-4">Support our programs financially and help us expand our reach to
+                                more communities in need.</p>
+                            <button class="btn btn-success">Make a Donation</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <i class="bi bi-megaphone-fill fs-1 text-warning mb-3"></i>
+                            <h4 class="fw-bold mb-3">Spread the Word</h4>
+                            <p class="text-muted mb-4">Help us raise awareness by sharing our mission with your network
+                                and community.</p>
+                            <button class="btn btn-warning">Share Our Mission</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Application Form -->
+    <section id="volunteer-form" class="py-5" style="display: none;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="mb-0">Volunteer Application</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <form id="volunteerApplicationForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="age" class="form-label">Age *</label>
+                                        <select class="form-select" id="age" required>
+                                            <option value="">Select your age range</option>
+                                            <option value="under-18">Under 18</option>
+                                            <option value="18-25">18-25</option>
+                                            <option value="26-35">26-35</option>
+                                            <option value="36-45">36-45</option>
+                                            <option value="46-55">46-55</option>
+                                            <option value="over-55">Over 55</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="availability" class="form-label">Availability *</label>
+                                        <select class="form-select" id="availability" required>
+                                            <option value="">Select your availability</option>
+                                            <option value="weekdays">Weekdays</option>
+                                            <option value="weekends">Weekends</option>
+                                            <option value="both">Both weekdays and weekends</option>
+                                            <option value="flexible">Flexible</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="interests" class="form-label">Areas of Interest *</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="education"
+                                                        id="education">
+                                                    <label class="form-check-label" for="education">Education &
+                                                        Literacy</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="housing"
+                                                        id="housing">
+                                                    <label class="form-check-label" for="housing">Housing &
+                                                        Shelter</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="food"
+                                                        id="food">
+                                                    <label class="form-check-label" for="food">Food Security</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="healthcare"
+                                                        id="healthcare">
+                                                    <label class="form-check-label" for="healthcare">Healthcare
+                                                        Access</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="community"
+                                                        id="community">
+                                                    <label class="form-check-label" for="community">Community
+                                                        Development</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="environment"
+                                                        id="environment">
+                                                    <label class="form-check-label" for="environment">Environmental
+                                                        Sustainability</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="experience" class="form-label">Previous Volunteer Experience</label>
+                                        <textarea class="form-control" id="experience" rows="3"
+                                            placeholder="Tell us about any previous volunteer experience you have..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="motivation" class="form-label">Why do you want to volunteer with us?
+                                            *</label>
+                                        <textarea class="form-control" id="motivation" rows="3" required
+                                            placeholder="Share what motivates you to volunteer with MXP Public Foundation..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="agreement" required>
+                                            <label class="form-check-label" for="agreement">
+                                                I agree to commit to a minimum of 3 months of volunteer service and
+                                                understand that background checks may be required for certain positions.
+                                                *
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">Submit
+                                            Application</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Opportunities Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-6 fw-bold mb-4 text-center">Internship Opportunities</h2>
+                    <p class="lead text-center mb-5">Gain valuable experience and contribute to our mission through our
+                        internship programs.</p>
+
+                    <!-- Placeholder for Internship Details -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">[Internship Program Title]</h5>
+                            <p class="card-text text-muted">[Brief description of the internship, including focus areas,
+                                duration, and eligibility.]</p>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm">Learn More / Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join as a General Member Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-6 fw-bold mb-4 text-center">Join as a General Member</h2>
+                    <p class="lead text-center mb-5">Become a part of the MXP Public Foundation family and support our
+                        work with an annual membership.</p>
+
+                    <!-- Placeholder for Membership Info -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Annual Membership: Rs. 101</h5>
+                            <p class="card-text text-muted">Your membership contribution helps sustain our ongoing
+                                programs and initiatives.</p>
+                            <p class="card-text text-muted small">[Placeholder for details on how to join and make the
+                                Rs. 101 donation.]</p>
+                            <a href="#" class="btn btn-success mt-3">Become a Member</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ on How to Help Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="display-6 fw-bold mb-3">Frequently Asked Questions (How to Help)</h2>
+                        <p class="lead">Find quick answers on how you can contribute and get involved.</p>
+                    </div>
+
+                    <div class="accordion" id="howToHelpFAQ">
+                        <!-- Placeholder for FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    [FAQ Question 1: e.g., What are the requirements to volunteer?]
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#howToHelpFAQ">
+                                <div class="accordion-body">
+                                    [Placeholder for FAQ Answer 1]
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Placeholder for FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    [FAQ Question 2: e.g., How can I donate specifically to a certain program?]
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#howToHelpFAQ">
+                                <div class="accordion-body">
+                                    [Placeholder for FAQ Answer 2]
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more FAQ items as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Partnerships -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold mb-3">Corporate Partnerships</h2>
+                <p class="lead">Partner with us to create meaningful corporate social responsibility programs.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-3">Employee Volunteer Programs</h4>
+                            <p class="text-muted mb-4">Engage your employees in meaningful volunteer opportunities that
+                                align with your company values and create team-building experiences.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Team building
+                                    through service</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Flexible
+                                    scheduling options</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Skill-based
+                                    volunteering</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Impact
+                                    reporting and recognition</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-3">Sponsorship Opportunities</h4>
+                            <p class="text-muted mb-4">Support specific programs or initiatives and receive recognition
+                                for your company's commitment to social responsibility.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Program
+                                    sponsorship packages</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Event
+                                    partnership opportunities</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Brand
+                                    visibility and recognition</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Detailed
+                                    impact reports</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="contact.html" class="btn btn-outline-primary btn-lg">Contact Us for Partnerships</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold mb-3">Volunteer Success Stories</h2>
+                <p class="lead">Hear from our volunteers about their meaningful experiences.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-person-fill fs-1 text-primary mb-3"></i>
+                            </div>
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-3">"Volunteering with MXP has been one of the most rewarding experiences of
+                                    my life. Seeing the direct impact of our work in the community is incredible."</p>
+                                <footer class="blockquote-footer">
+                                    <cite title="Source Title">Sarah M., Education Volunteer</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-person-fill fs-1 text-success mb-3"></i>
+                            </div>
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-3">"The team at MXP made me feel welcome from day one. I've learned so much
+                                    while helping others, and I've made lifelong friends."</p>
+                                <footer class="blockquote-footer">
+                                    <cite title="Source Title">Michael R., Housing Program Volunteer</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-person-fill fs-1 text-warning mb-3"></i>
+                            </div>
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-3">"I started volunteering in college and it's shaped my career path. MXP
+                                    taught me the importance of community service."</p>
+                                <footer class="blockquote-footer">
+                                    <cite title="Source Title">Jessica L., Community Development Volunteer</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">MXP Public Foundation</h5>
+                    <p class="text-light-50">Creating positive change in communities worldwide through education,
+                        housing, healthcare, and community development programs.</p>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light-50 text-decoration-none">About Us</a></li>
+                        <li><a href="programs.html" class="text-light-50 text-decoration-none">Programs</a></li>
+                        <li><a href="get-involved.html" class="text-light-50 text-decoration-none">Get Involved</a></li>
+                        <li><a href="contact.html" class="text-light-50 text-decoration-none">Contact</a></li>
+                        <li><a href="news-events.html" class="text-light-50 text-decoration-none">News & Events</a></li>
+                        <li><a href="resources-media.html" class="text-light-50 text-decoration-none">Resources /
+                                Media</a></li>
+                        <li><a href="legal-compliance.html" class="text-light-50 text-decoration-none">Legal &
+                                Compliance</a></li>
+                        <li><a href="donate.html" class="text-light-50 text-decoration-none">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-light-50 mb-1"><i class="bi bi-geo-alt me-2"></i>123 Foundation Street</p>
+                    <p class="text-light-50 mb-1"><i class="bi bi-telephone me-2"></i>(555) 123-4567</p>
+                    <p class="text-light-50 mb-1"><i class="bi bi-envelope me-2"></i>info@mxpfoundation.org</p>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Follow Us</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light-50"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light-50"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light-50"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light-50"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light-50 mb-0">&copy; 2024 MXP Public Foundation. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
